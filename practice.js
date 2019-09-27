@@ -29,7 +29,7 @@ document.querySelector("input").addEventListener("keypress", function(event){
 
 function deleteTodo(){
     var spans = document.querySelectorAll("span");
-    // i don't fully understand what the next line is doing
+    // i don't fully understand what the next line is doing, its letting me add event listeners to spans not yet created, but i dont know how
     for(let span of spans){
         span.addEventListener("click", function(){
             span.parentElement.remove();
