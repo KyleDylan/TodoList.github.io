@@ -1,17 +1,102 @@
-* {
-  margin:0px;
-  padding:0px;
+body {
+    font-family: 'Roboto Slab', serif;
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+.completed {
+    text-decoration: line-through;
+    color: #666;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+.container {
+    width: 500px;
+    margin-bottom: none;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    background-color: #09455A;
+    text-align: center;
+    padding: 0;
+    margin: 0;  
+    height: 50px;
+    font-size: 34px;
+}
+
+input {
+    width: 100%;
+    background-color: #8B9494;
+    height: 40px;
+    color: #09455A;
+    border: solid 3px #8b9494;
+    box-sizing: border-box;
+    box-shadow: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input:focus {
+    outline: none;
+    border: solid 3px rgb(164, 191, 201);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 35px;
+    font-size: 18px;
+    background-color: white;
+    color: #09455A;
+}
+
+li:nth-child(2n) {
+    background-color: #8B9494;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+span {
+    margin-right: 20px;
+    background-color: rgb(59, 149, 182);
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    width: 0;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+.fa-plus {
+    color: white;
+    height: 35px;
+    background-color: none;
+    float: right;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+.fa-dumpster {
+    color: white;
+    background-color: none;
+    padding-top: 8px;
+    padding-right: 385px;
+    float: right;
+}
+
+.display {
+    display: none;
+}
+
