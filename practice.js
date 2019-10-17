@@ -2,7 +2,6 @@ var ul = document.querySelector("ul");
 var input = document.querySelector("input");
 
 deleteTodo();
-// not sure why i have to run the function first
 
 document.querySelector("ul").addEventListener("click", function(event){
     if(event.target.classList.contains("item")){
@@ -24,12 +23,10 @@ document.querySelector("input").addEventListener("keypress", function(event){
         ul.appendChild(li).append(spanElement, newTodo);
     }
     deleteTodo();     
-    // Adding the function here makes new To-dos removeable, why?
 });
 
 function deleteTodo(){
     var spans = document.querySelectorAll("span");
-    // i don't fully understand what the next line is doing, its letting me add event listeners to spans not yet created, but i dont know how
     for(let span of spans){
         span.addEventListener("click", function(){
             span.parentElement.remove();
